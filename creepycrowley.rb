@@ -66,6 +66,7 @@ if ($run)
 	login()
 	get_ips()
 
-	p $ips
-	p $ips.count
+$ips.length.times do |i|
+	print $ips[i] +  '\n'
+end
 end
