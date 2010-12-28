@@ -2,4 +2,16 @@ Welcome to CreepyCrowley
 
 This is a html crawler/scrapper intended to help you with your free account at SHODANHQ.com.
 
-You don't even need one, actually, just download the script, give it running permiisions
+You don't even need one, actually, just download the script, give it running permissions, run it with -h or --help to see a list of arguments.
+
+Example:
+
+./creepycrowley.rb -u username -p passwd -c US -s "default password"
+
+This will login as your username, and search for every machine with "default password" in their HEAD flag, and filter US only machines. Then it will return you an IP list.
+
+If you may, you can redirect the output to a file to feed, for instance, medusa, like this:
+
+./creepycrowley.rb -u username -p psswd -c FR -s "default" >> ips.txt
+
+And then feed it to another programme. 

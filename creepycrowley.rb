@@ -67,6 +67,6 @@ if ($run)
 	get_ips()
 
 $ips.length.times do |i|
-	print $ips[i] +  '\n'
+	puts $ips[i]
 end
 end
